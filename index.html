@@ -21,6 +21,12 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <!-- Importacion de VUE test-->
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+    <!-- Import of dark mode -->
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="light.css" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    <script type="module" src="https://googlechromelabs.github.io/dark-mode-toggle/src/dark-mode-toggle.mjs"></script>
+
     <script src="../scripts/index.js"></script>
     <title>Plantilla HTML</title>
 </head>
@@ -38,5 +44,16 @@
         </p>
     </div>
 </body>
+<footer class="d-flex justify-content-around bg-color:dark">
+    <div class="mt-3 text-white redes">
+        <a class="red-github link-light" target="_blank" href="https://github.com/john024x"><i class="fab fa-github fa-2x"></i></a>
+        <a class="red-twitter link-light" target="_blank" href="https://twitter.com/john024x"><i class="fab fa-twitter fa-2x"></i></a>
+        <a class="red-instagram link-light" target="_blank" href="https://instagram.com/john024x"><i class="fab fa-instagram fa-2x"></i></a>
+        <a class="red-twitch link-light" target="_blank" href="https://twitch.com/john024x"><i class="fab fa-twitch fa-2x"></i></a>
+    </div>
+    <section class="mt-2 text-white">
+        <dark-mode-toggle id="dark-mode-toggle-1" appearance="toggle"></dark-mode-toggle>
+    </section>
+</footer>
 
 </html>
